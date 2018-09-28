@@ -1,0 +1,46 @@
+<!--<div class="grid">-->
+  <!--<app-video-list-->
+    <!--[videos]="videoList | async"-->
+    <!--[selectedVideoId]="selectedVideoId | async"-->
+    <!--(selectVideo)="selectVideo($event)"-->
+  <!--&gt;</app-video-list>-->
+  <!--<app-video-embedder-->
+    <!--[videoId]="selectedVideoId | async"-->
+  <!--&gt;</app-video-embedder>-->
+  <!--<app-view-graph-->
+    <!--[viewDetails]="getViews() | async"-->
+  <!--&gt;</app-view-graph>-->
+  <!--<app-view-filter-->
+    <!--(filterChange)="setFilter($event)"-->
+  <!--&gt;</app-view-filter>-->
+<!--</div>-->
+<mat-card>
+  <mat-card-content>
+    <app-video-list
+      [videos]="videoList | async"
+      [selectedVideoId]="selectedVideoId | async"
+      (selectVideo)="selectVideo($event)"
+    ></app-video-list>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <app-video-embedder
+      [videoId]="selectedVideoId | async"
+    ></app-video-embedder>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <app-view-graph
+      [viewDetails]="getViews() | async"
+    ></app-view-graph>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <app-view-filter
+      (filterChange)="setFilter($event)"
+    ></app-view-filter>
+  </mat-card-content>
+</mat-card>

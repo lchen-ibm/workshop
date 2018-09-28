@@ -1,0 +1,21 @@
+<form [formGroup]="filterForm">
+  <div>
+    <label><input type="radio" formControlName="region" value="All"> All</label>
+    <label><input type="radio" formControlName="region" value="North America"> N.A.</label>
+    <label><input type="radio" formControlName="region" value="Europe"> Europe</label>
+    <label><input type="radio" formControlName="region" value="Asia"> Asia</label>
+  </div>
+  <div>
+    <label><input type="checkbox" formControlName="ageGroupTeens">Under 18</label>
+    <label><input type="checkbox" formControlName="ageGroupYoungAdults">18 - 40</label>
+    <label><input type="checkbox" formControlName="ageGroupAdults">41 - 60</label>
+    <label><input type="checkbox" formControlName="ageGroupSeniors">61+</label>
+  </div>
+  <div>
+    <input type="text" formControlName="test">
+    <div *ngIf="filterForm.get('test').hasError('testError')">test error</div>
+  </div>
+  <button [disabled]="!filterForm.valid" [class.disabled]="!filterForm.valid">Test</button>
+</form>
+
+<pre>{{filterForm.value | json}}</pre>

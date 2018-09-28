@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let video of videos"
+      class="video-info"
+      (click)="setVideo(video)"
+      [class.selected]="video.id === selectedVideoId">
+    {{video.title}} by {{video.author}}
+  </li>
+</ul>

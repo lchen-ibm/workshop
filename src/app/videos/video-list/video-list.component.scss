@@ -1,0 +1,6 @@
+.video-info {
+  cursor: pointer;
+  &.selected {
+    color: red;
+  }
+}
