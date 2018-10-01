@@ -8,9 +8,9 @@ describe('ViewGraphComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ViewGraphComponent ]
+      declarations: [ViewGraphComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

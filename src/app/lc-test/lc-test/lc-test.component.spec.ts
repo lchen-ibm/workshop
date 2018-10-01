@@ -8,9 +8,9 @@ describe('LcTestComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LcTestComponent ]
+      declarations: [LcTestComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

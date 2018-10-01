@@ -1,8 +1,8 @@
-import {Injectable} from '@angular/core';
-import {Effect, Actions, ROOT_EFFECTS_INIT, ofType} from '@ngrx/effects';
-import {VideoService} from './video.service';
-import {switchMap, map} from 'rxjs/operators';
-import {SetVideos} from './videos.state';
+import { Injectable } from '@angular/core';
+import { Effect, Actions, ROOT_EFFECTS_INIT, ofType } from '@ngrx/effects';
+import { VideoService } from './video.service';
+import { switchMap, map } from 'rxjs/operators';
+import { SetVideos } from './videos.state';
 
 @Injectable()
 export class VideoEffectsService {
@@ -13,5 +13,6 @@ export class VideoEffectsService {
     map(videos => new SetVideos(videos))
   );
 
-  constructor(private videoService: VideoService, private actions: Actions) {}
+  constructor(private videoService: VideoService, private actions: Actions) {
+  }
 }

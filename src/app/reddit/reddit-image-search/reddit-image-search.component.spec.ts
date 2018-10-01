@@ -8,9 +8,9 @@ describe('RedditImageSearchComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RedditImageSearchComponent ]
+      declarations: [RedditImageSearchComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

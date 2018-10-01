@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Filter, Video } from './videos.types';
 import { combineLatest, Observable } from 'rxjs';
-import {VideosStateService} from './videos-state.service';
+import { VideosStateService } from './videos-state.service';
 import { map, switchMap } from 'rxjs/operators';
 
 @Component({
@@ -13,7 +13,8 @@ export class VideosComponent implements OnInit {
   videoList: Observable<Video[]> = this.videosStateService.videos;
   selectedVideoId: Observable<string> = this.videosStateService.selectedVideoId;
 
-  constructor(private videosStateService: VideosStateService) {}
+  constructor(private videosStateService: VideosStateService) {
+  }
 
   ngOnInit() {
   }

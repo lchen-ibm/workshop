@@ -12,7 +12,8 @@ export class VideoListComponent implements OnInit {
   @Input() selectedVideoId: string;
   @Output() selectVideo = new EventEmitter<Video>();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

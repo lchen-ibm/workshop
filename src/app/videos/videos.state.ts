@@ -1,6 +1,6 @@
-import {Action} from '@ngrx/store';
+import { Action } from '@ngrx/store';
 
-import {Video, Filter} from './videos.types';
+import { Video, Filter } from './videos.types';
 
 const SET_VIDEOS = 'SET_VIDEOS';
 

@@ -4,7 +4,7 @@ import { LcTestComponent } from './lc-test/lc-test.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: LcTestComponent}
+  {path: '', component: LcTestComponent}
 ];
 
 @NgModule({
@@ -14,4 +14,5 @@ const routes: Routes = [
   ],
   declarations: [LcTestComponent]
 })
-export class LcTestModule { }
+export class LcTestModule {
+}

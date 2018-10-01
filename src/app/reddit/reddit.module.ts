@@ -15,4 +15,5 @@ const routes: Routes = [
   ],
   declarations: [RedditImageSearchComponent]
 })
-export class RedditModule { }
+export class RedditModule {
+}
